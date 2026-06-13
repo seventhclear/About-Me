@@ -283,30 +283,18 @@ a { color: inherit; text-decoration: none; }
   width: 280px;
   height: 340px;
   border-radius: 24px;
-  background: var(--surface2);
   border: 1px solid var(--border);
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
   position: relative;
 }
 
-.portrait-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(192,132,252,.08), rgba(129,140,248,.08));
+.portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
-
-.portrait-placeholder {
-  width: 120px;
-  position: relative;
-  z-index: 1;
-}
-
-.portrait-placeholder svg { width: 100%; height: auto; }
 
 .badge {
   display: inline-flex;
@@ -438,7 +426,6 @@ a { color: inherit; text-decoration: none; }
     gap: 1.5rem;
   }
   .portrait-wrap { width: 120px; height: 150px; border-radius: 16px; }
-  .portrait-placeholder { width: 60px; }
 }
 
 @media (max-width: 600px) {
