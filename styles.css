@@ -342,7 +342,7 @@ a { color: inherit; text-decoration: none; }
 
 .fact-num {
   font-family: var(--font-serif);
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   color: var(--white);
   line-height: 1;
 }
